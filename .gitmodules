@@ -22,3 +22,6 @@
 [submodule "deps/websockets-snap"]
 	path = deps/websockets-snap
 	url = https://github.com/imalsogreg/websockets-snap
+[submodule "deps/clock"]
+	path = deps/clock
+	url = https://github.com/corsis/clock
