@@ -104,3 +104,4 @@ getActions conf = do
         (appEnvironment =<< getOther conf) app
     hPutStrLn stderr $ T.unpack msgs
     return (site, cleanup)
+

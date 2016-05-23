@@ -8,9 +8,13 @@
 module Main where
 
 import Reflex.Dom
+<<<<<<< HEAD
 import Servant.Reflex.BaseUrl (BaseUrl (BaseFullUrl),Scheme(Http))
 import Servant.Reflex.Req
 import Servant.Reflex -- (BaseUrl (BaseUrl),Scheme (HTTP),client)
+=======
+import Servant.Reflex 
+>>>>>>> 37a9e4676a9b042757a19b31180da056c28e7468
 import API
 import Data.Proxy
 
