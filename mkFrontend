@@ -1,0 +1,2 @@
+cd frontend && ../deps/reflex-platform/work-on ./tr.nix  ./. --run "cabal configure --ghcjs && cabal build" && cd ..
+
