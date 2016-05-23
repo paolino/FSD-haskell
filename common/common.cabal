@@ -16,8 +16,8 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     McGurk.API
-                       McGurk.Types
+  exposed-modules:API
+                       
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.8 && <4.9,

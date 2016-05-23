@@ -9,5 +9,6 @@ reflex-platform.ghcjs.override {
      reflex-dom-contrib  = (self.callPackage (reflex-platform.cabal2nixResult ../deps/reflex-dom-contrib) {});
      common      = (self.callPackage ../common {});
      servant             = (self.callPackage (reflex-platform.cabal2nixResult ../deps/servant-snap/deps/servant/servant) {});
+     servant-reflex             = (self.callPackage (reflex-platform.cabal2nixResult ../deps/servant-reflex) {});
   };
 }

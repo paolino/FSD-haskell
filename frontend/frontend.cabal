@@ -17,17 +17,11 @@ cabal-version:       >=1.10
 
 executable frontend
   main-is:             Main.hs
-  other-modules:       MediaElement
+  other-modules:       
   other-extensions:    CPP
   build-depends:       base >=4.8 && <4.9,
-                       ghcjs-dom,
-                       aeson,
-                       common,
-                       time,
-                       lens >=4.13 && <4.14,
-                       transformers >=0.4 && <0.5,
-                       containers >=0.5 && <0.6,
                        reflex-dom,
-                       bytestring
+                       common,
+                       servant-reflex
   hs-source-dirs:      .
   default-language:    Haskell2010

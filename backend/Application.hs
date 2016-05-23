@@ -19,24 +19,10 @@ import Snap.Snaplet.Heist
 import Snap.Snaplet.Auth
 import Snap.Snaplet.Session
 import qualified Network.WebSockets as WS
-import McGurk.Types
 
 ------------------------------------------------------------------------------
 data App = App
-    { _heist :: Snaplet (Heist App)
-    , _sess  :: Snaplet SessionManager
-    , _rooms :: TVar (Map RoomNumber WSRoom)
-    }
-
-data WSRoom = WSRoom {
-    _lectureConnecion :: WS.Connection
-  , _audienceConnections :: [WS.Connection]
-  }
 
 makeLenses ''App
 
-instance HasHeist App where
-    heistLens = subSnaplet heist
-
-------------------------------------------------------------------------------
 type AppHandler = Handler App App
