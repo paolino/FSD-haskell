@@ -1,3 +1,2 @@
 
 cd backend  && ../deps/reflex-platform/work-on ./ghc.nix ./. --run "cabal configure         && cabal build" && cd ..
-cp backend/dist/build/backend/backend app/
