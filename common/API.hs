@@ -6,7 +6,9 @@ module API where
 import Servant.API
 import Data.Proxy
 
-type API = "a" :> Get '[JSON] Int
+type API =  "number" :> Get '[JSON] Int 
+            :<|>
+            "text" :> Get '[JSON] String
 
 api :: Proxy API
 api = Proxy

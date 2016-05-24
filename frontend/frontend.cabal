@@ -22,6 +22,8 @@ executable frontend
   build-depends:       base >=4.8 && <4.9,
                        reflex-dom,
                        common,
-                       servant-reflex
+                       servant-reflex,
+                       servant
+
   hs-source-dirs:      .
   default-language:    Haskell2010
