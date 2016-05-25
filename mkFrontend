@@ -1,4 +1,4 @@
 cd frontend &&  ./wrap "cabal configure --ghcjs && cabal build" && cd ..
 rm -rf static/*
-cp -r frontend/Main.jsexe/* static
+cp -r frontend/dist/build/frontend/frontend.jsexe/* static
 
